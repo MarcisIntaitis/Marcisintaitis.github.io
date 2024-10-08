@@ -1,7 +1,7 @@
 .nav-container{
     position: absolute;
     top: 50%;
-    left: 30px;
+    left: 1.7rem;
     translate: 0 -50%;
     display: flex;
     flex-direction: column;
@@ -9,6 +9,7 @@
 }
 
 .nav-link{
+    margin: 1rem 0;
     text-decoration: none;
     color: var(--text);
     font-size: 1.5rem;
@@ -20,4 +21,24 @@
 
 .nav-link:target{
     color: red;
+}
+
+@media (max-width: 860px){
+    .nav-container{
+        top: 1rem;
+        left: 50%;
+        translate: -50% 0;
+        flex-direction: row;
+    }
+
+    .nav-link{
+        margin: 0 0.5rem;
+    }
+}
+
+@media (max-width: 300px){
+    .nav-link{
+        font-size: 1rem;
+        font-weight: bold;
+    }
 }

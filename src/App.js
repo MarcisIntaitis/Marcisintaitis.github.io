@@ -1,5 +1,4 @@
 import './App.css';
-import { About } from './pages/about';
 import { Contacts } from './pages/contacts';
 import { Main } from './pages/main';
 import { Projects } from './pages/projects';
@@ -17,7 +16,6 @@ function App() {
       >
         <Main />
         <Projects />
-        <About />
         <Contacts />
       </ScrollMenu>
     </div>

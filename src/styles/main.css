@@ -1,0 +1,25 @@
+.main-container{
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.greeting{
+    font-size: 3rem;
+}
+
+.description{
+    font-size: 1.3rem;
+    width: 60%;
+    text-align: center;
+}
+
+@media (max-width: 380px) {
+    .greeting{
+        font-size: 2rem;
+    }
+    .description{
+        font-size: 1rem;
+        width: 90%;
+    }
+}
