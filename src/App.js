@@ -1,25 +1,38 @@
-import logo from './logo.svg';
 import './App.css';
+import { About } from './pages/about';
+import { Contacts } from './pages/contacts';
+import { Main } from './pages/main';
+import { Projects } from './pages/projects';
+import { ScrollMenu } from 'react-horizontal-scrolling-menu';
+import 'react-horizontal-scrolling-menu/dist/styles.css';
+import { throttle } from 'lodash';
+import { Navbar } from './components/navbar';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='app-container'>
+      <Navbar />
+      <ScrollMenu 
+        onWheel={throttledOnWheel}
+      >
+        <Main />
+        <Projects />
+        <About />
+        <Contacts />
+      </ScrollMenu>
     </div>
   );
 }
+
+// Throttle the scroll function to fire at intervals of 500ms otherwise it causes a weird jitter and just looks bad
+const throttledOnWheel = throttle((apiObj, ev) => {
+  if (ev.deltaY !== 0) {
+    if (ev.deltaY < 0) {
+      apiObj.scrollPrev();
+    } else if (ev.deltaY > 0) {
+      apiObj.scrollNext();
+    }
+  }
+}, 500);
 
 export default App;
