@@ -1,24 +1,71 @@
 * {
   box-sizing: border-box;
   --text: #fff;
+  --accent: #b4fbb5;
   --hover: rgb(207, 255, 253);
-  --background: #010112;
+  --background: #0e0e0e;
   scroll-behavior: smooth;
+  /* cursor:none; */
 }
 
-body{
+/* width */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--background);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--text);
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--hover);
+  cursor: pointer;
+}
+
+body {
   margin: 0;
   padding: 0;
   background-color: var(--background);
-  overflow: hidden;
+  overflow-x: hidden;
+}
+
+.progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 10px;
+  background: var(--text);
+  transform-origin: 0%;
+  z-index: 3;
 }
 
 .container {
-  border-right: 1px solid black;
   color: var(--text);
   width: 100vw; /* Each section will take the full viewport width */
   height: 100vh; /* Each section will take the full viewport height */
   display: flex;
   justify-content: center;
   align-items: center;
+}
+@media (max-width: 600px) {
+  .container {
+    margin: 0 2rem;
+  }
+
+  #main {
+    margin-left: 0;
+  }
+
+  #contacts {
+    margin-right: 0;
+  }
 }

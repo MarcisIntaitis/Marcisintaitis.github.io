@@ -1,8 +1,8 @@
 .nav-container{
     position: absolute;
     top: 50%;
-    left: 1.7rem;
     translate: 0 -50%;
+    margin-left: 1.6rem;
     display: flex;
     flex-direction: column;
     z-index: 100;
