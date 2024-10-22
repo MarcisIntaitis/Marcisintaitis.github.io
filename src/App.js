@@ -1,8 +1,9 @@
 import "./App.css";
 import { Contacts } from "./pages/contacts";
-import { Hero } from "./pages/hero";
+import { Main } from "./pages/main";
 import { Projects } from "./pages/projects";
 import { motion, useScroll, useSpring } from "framer-motion";
+import { Navbar } from "./components/navbar";
 import CustomCursor from "./components/customCursor"; // Import the custom cursor
 
 function App() {
@@ -15,9 +16,10 @@ function App() {
 
   return (
     <div className="app-container">
+      {/* <Navbar /> */}
       <CustomCursor /> {/* Add the custom cursor */}
       <motion.div className="progress-bar" style={{ scaleX }} />
-      <Hero />
+      <Main />
       <Projects />
       <Contacts />
     </div>

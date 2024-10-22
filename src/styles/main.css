@@ -1,25 +1,27 @@
-.main-container{
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
+#main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.greeting {
+  font-size: 3rem;
+  width: 100%;
+  text-align: center;
 }
 
-.greeting{
-    font-size: 3rem;
-}
-
-.description{
-    font-size: 1.3rem;
-    width: 60%;
-    text-align: center;
+.hero-description {
+  font-size: 1.3rem;
+  width: 60%;
+  text-align: center;
 }
 
 @media (max-width: 380px) {
-    .greeting{
-        font-size: 2rem;
-    }
-    .description{
-        font-size: 1rem;
-        width: 90%;
-    }
+  .greeting {
+    font-size: 2rem;
+  }
+  .hero-description {
+    font-size: 1rem;
+    width: 90%;
+  }
 }

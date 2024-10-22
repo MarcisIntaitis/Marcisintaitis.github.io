@@ -17,6 +17,13 @@ export const Contacts = () => {
         >
           LinkedIn
         </a>
+        <a
+          href="mailto: marcisintaitis@gmail.com"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Email
+        </a>
       </div>
     </section>
   );

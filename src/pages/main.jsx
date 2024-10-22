@@ -1,9 +1,9 @@
 import { motion } from "framer-motion";
-import "../styles/hero.css";
+import "../styles/main.css";
 
-export const Hero = () => {
+export const Main = () => {
   return (
-    <section className="container" id="hero">
+    <section className="container" id="main">
       <motion.div
         initial={{ opacity: 0, scale: 0.5 }}
         animate={{ opacity: 1, scale: 1 }}
@@ -18,11 +18,13 @@ export const Hero = () => {
             fontWeight: "bold",
             fontSize: "3rem",
           }}
+          className="greeting"
         >
           HEY I'M MĀRCIS
         </h1>
       </motion.div>
       <motion.div
+        style={{ display: "flex", justifyContent: "center" }}
         initial={{ opacity: 0, scale: 0.5 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{
@@ -32,7 +34,7 @@ export const Hero = () => {
         }}
       >
         <p className="hero-description">
-          A web developer mostly working with <em>React</em> trying to make{" "}
+          A web developer mostly working with <em>React</em>, trying to make{" "}
           <em>responsive</em> and <em>visually interesting</em> sites
         </p>
       </motion.div>
