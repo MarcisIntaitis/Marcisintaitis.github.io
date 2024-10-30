@@ -29,14 +29,11 @@ export const Main = () => {
         animate={{ opacity: 1, scale: 1 }}
         transition={{
           duration: 0.8,
-          delay: 1.4,
+          delay: 0.8,
           ease: [0, 0.71, 0.2, 1.01],
         }}
       >
-        <p className="hero-description">
-          A web developer mostly working with <em>React</em>, trying to make{" "}
-          <em>responsive</em> and <em>visually interesting</em> sites
-        </p>
+        <p className="hero-description">Web developer based in Riga, Latvia</p>
       </motion.div>
     </section>
   );

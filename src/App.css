@@ -79,3 +79,9 @@ body {
   left: 0;
   pointer-events: none;
 }
+
+@media screen and (max-width: 790px) {
+  .app-container {
+    border: none;
+  }
+}
