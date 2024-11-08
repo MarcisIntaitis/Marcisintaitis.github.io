@@ -2,7 +2,7 @@ import "../styles/contacts.css";
 
 export const Contacts = () => {
   return (
-    <section className="container" id="contacts">
+    <section className="contacts-container">
       <p className="title-text">Get in contact with me!</p>
       <div className="social-links">
         <a

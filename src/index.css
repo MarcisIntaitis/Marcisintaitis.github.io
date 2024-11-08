@@ -9,3 +9,15 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+* {
+  --background: #090909;
+  --card-color: #252525;
+  --border: #5c5c5c;
+  --button-text: #404040;
+  --text: #d5d5d5;
+  --dark-text: #959595;
+  box-sizing: border-box;
+  --button: #d6d6d6;
+  cursor: none;
+}

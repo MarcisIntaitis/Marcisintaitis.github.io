@@ -12,7 +12,7 @@ const CustomCursor = () => {
     const mouseMove = (e) => {
       setMousePosition({
         x: e.clientX,
-        y: e.clientY,
+        y: e.clientY - 6,
       });
     };
 

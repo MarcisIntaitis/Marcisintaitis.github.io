@@ -1,40 +1,25 @@
-import { motion } from "framer-motion";
 import "../styles/main.css";
+import profileImage from "../images/profile image.jpg";
+import locationPin from "../images/location_on_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg";
 
 export const Main = () => {
   return (
-    <section className="container" id="main">
-      <motion.div
-        initial={{ opacity: 0, scale: 0.5 }}
-        animate={{ opacity: 1, scale: 1 }}
-        transition={{
-          duration: 0.8,
-          delay: 0.5,
-          ease: [0, 0.71, 0.2, 1.01],
-        }}
-      >
-        <h1
-          style={{
-            fontWeight: "bold",
-            fontSize: "3rem",
-          }}
-          className="greeting"
-        >
-          HEY I'M MĀRCIS
-        </h1>
-      </motion.div>
-      <motion.div
-        style={{ display: "flex", justifyContent: "center" }}
-        initial={{ opacity: 0, scale: 0.5 }}
-        animate={{ opacity: 1, scale: 1 }}
-        transition={{
-          duration: 0.8,
-          delay: 0.8,
-          ease: [0, 0.71, 0.2, 1.01],
-        }}
-      >
-        <p className="hero-description">Web developer based in Riga, Latvia</p>
-      </motion.div>
+    <section className="main-container container">
+      <img className="profile-image" src={profileImage} alt="Marcis profile" />
+      <div className="information">
+        <div className="greeting-div">
+          <h1 className="greeting">Mārcis Intaitis</h1>
+        </div>
+        <div className="profession-div">
+          <h2 className="profession">Junior web developer</h2>
+        </div>
+        <div className="location-div">
+          <p className="location">
+            <img src={locationPin} alt="location" className="location-pin" />
+            Riga, Latvia
+          </p>
+        </div>
+      </div>
     </section>
   );
 };

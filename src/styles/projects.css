@@ -1,18 +1,21 @@
 .project-grid {
-  width: 60vw;
+  width: 80vw;
   padding: 2rem;
   display: flex;
   justify-content: center;
+  border: 2px solid var(--border);
+  margin-top: 1rem;
+  border-radius: 16px;
 }
 
 .project-card {
-  background: var(--card);
+  background: var(--card-color);
   max-width: 100% !important;
   padding: 1rem;
   height: auto;
   border-radius: 10px;
   text-align: center;
-  color: white;
+  color: var(--text);
   padding-bottom: 4rem;
 }
 
@@ -40,7 +43,7 @@
   border-radius: 5px;
   border: none;
   text-decoration: none;
-  color: var(--text);
+  color: var(--button-text);
   font-weight: bold;
   font-size: 1rem;
 }
@@ -52,6 +55,7 @@
 }
 @media screen and (max-width: 790px) {
   .project-grid {
-    width: 100vw;
+    width: 100%;
+    padding: 0.5rem 0;
   }
 }
