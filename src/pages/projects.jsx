@@ -2,8 +2,8 @@ import { motion } from "framer-motion";
 import "../styles/projects.css";
 import Masonry from "@mui/lab/Masonry";
 import selfcare from "../images/selfcare.png";
-import gifs from "../images/gifs.png";
 import player from "../images/player.png";
+import weather from "../images/weather.png";
 
 const projects = [
   {
@@ -17,11 +17,12 @@ const projects = [
   },
   {
     id: 2,
-    title: "Gif searching app",
-    image: gifs,
-    description: "Android app made with Kotlin using Giphy API",
-    tech: ["Kotlin"],
-    link: ["https://github.com/MarcisIntaitis/GifSearchApp"],
+    title: "Weather app",
+    image: weather,
+    description:
+      "Made using React and ChartJS for the front-end, PHP for the backend. Uses weatherapi to fetch new weather information on user input, displays 24h temperature prediction and current weather",
+    tech: ["React", "ChartJS", "PHP"],
+    link: ["https://github.com/MarcisIntaitis/weather-app"],
   },
   {
     id: 3,
